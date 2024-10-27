@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./assets/background.png);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 10% 0 10%;
+  @media (max-width: 400px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 400px) {
+      display: none;
+    }
+    li {
+      margin: 0 3%;
+    }
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .conteudo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 6% 12%;
+    @media (max-width: 850px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .ilustracao {
+    width: 50vw;
+    height: 50vh;
+    @media (max-width: 400px) {
+      width: 80vw;
+    }
+  }
+  .sobre {
+    width: 420px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 850px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 8%;
+    }
+    @media (max-width: 400px) {
+      padding: 0 8%;
+    }
+
+    h2 {
+      font-family: "Archivo", sans-serif;
+      font-family: Open Sans;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.362rem;
+      text-align: left;
+    }
+    h1 {
+      font-family: "Andada Pro", serif;
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 4.4rem;
+      text-align: left;
+    }
+    p {
+      font-family: "Archivo", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+      text-align: left;
+      margin: 5% 0;
+    }
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 850px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    button {
+      width: 240px;
+      height: 52px;
+      border-radius: 4px;
+      font-family: Roboto;
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.369rem;
+      text-align: center;
+    }
+    button:hover {
+      border: 1px solid rgb(204, 202, 202);
+      background-color: #4e32778c;
+      cursor: pointer;
+      color: rgb(204, 202, 202);
+    }
+    .assistir-agora {
+      background-color: #f1a5b1;
+      color: #0b0a0a;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.09px;
+      text-align: center;
+    }
+    .assistir-trailer {
+      background-color: transparent;
+      color: #ffffff;
+      border-color: #f1a5b1;
+    }
+  }
+}
