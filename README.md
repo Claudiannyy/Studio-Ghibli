@@ -1,4 +1,4 @@
-# Projeto de Front-End: Site da L'Oréal
+# Projeto de Front-End: Studio-Ghibli
 
 ## 📜 Descrição
 
